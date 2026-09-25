@@ -1,1 +1,62 @@
-
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IXTU 2</title>
+<style>
+  :root {
+    --bg: #0f1115;
+    --btn: #4f7cff;
+    --btn-hover: #3a63e0;
+    --text: #f2f3f5;
+    box-sizing: border-box;
+    padding-top: env(safe-area-inset-top, 0px);
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f4f5f7;
+      --text: #14161a;
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f5f7;
+    --text: #14161a;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  a.btn {
+    display: inline-block;
+    padding: 1.1em 2.4em;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #fff;
+    background: var(--btn);
+    border-radius: 14px;
+    text-decoration: none;
+    transition: background 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 8px 20px rgba(79,124,255,0.35);
+  }
+  a.btn:hover {
+    background: var(--btn-hover);
+  }
+  a.btn:active {
+    transform: scale(0.97);
+  }
+</style>
+</head>
+<body>
+  <a class="btn" href="inforbx/">IXTU 2</a>
+</body>
+</html>
